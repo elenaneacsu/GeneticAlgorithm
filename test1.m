@@ -1,0 +1,11 @@
+freq=loadData('data.txt');
+pop=gen_pop(10, freq);
+popE=evaluatePop(pop, freq);
+disp(popE);
+%desc=crossover(popE, freq, 0.99);
+%disp('==============');
+%disp(size(desc));
+%disp(desc);
+dist = getDistance(popE(1,:), popE(2,:));
+disp(dist);
+finalAlg(10,20,1,1,10,0.3,0.9,0.1);
